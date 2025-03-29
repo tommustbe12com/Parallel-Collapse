@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0ffaa0b7117ba8c47a9d05ae701d4b4d, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -96,8 +96,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 5f21602e008f54f428fc65ed656ae4a9, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: a672cc902f7c641469d2f1fd00fd69b7, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -582,7 +582,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 245e3ad904646a94bbea9c2f13e0d194, type: 2}
+  - {fileID: 2100000, guid: 70d4d5ba3c710b145a24eebf2f653279, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -661,7 +661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: -384}
+  m_AnchoredPosition: {x: 19, y: -260}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302142457
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -652.8208, y: -769.5613, z: -614.48413, w: 98.746765}
+  m_margin: {x: -348.52286, y: -769.5613, z: -313.12665, w: 98.746765}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -876,7 +876,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 245e3ad904646a94bbea9c2f13e0d194, type: 2}
+  - {fileID: 2100000, guid: 70d4d5ba3c710b145a24eebf2f653279, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3328,8 +3328,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4280032284
+  m_fontColor: {r: 0.10980393, g: 0.10980393, b: 0.10980393, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3450,7 +3450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.76, y: 1.74}
+  m_AnchoredPosition: {x: 1.76, y: 1.8}
   m_SizeDelta: {x: 9.7658, y: 4.0224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1321351907
@@ -4605,7 +4605,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 245e3ad904646a94bbea9c2f13e0d194, type: 2}
+  - {fileID: 2100000, guid: 70d4d5ba3c710b145a24eebf2f653279, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4922,7 +4922,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 245e3ad904646a94bbea9c2f13e0d194, type: 2}
+  - {fileID: 2100000, guid: 70d4d5ba3c710b145a24eebf2f653279, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4997,7 +4997,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.51
+      value: -48.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5005,23 +5005,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.14
+      value: -19.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93073946
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.36568296
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5029,7 +5029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -42.899
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 80f90d084e3d5e94ca92c8205104b182, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
