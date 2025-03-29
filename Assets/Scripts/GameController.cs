@@ -39,9 +39,8 @@ public class GameController : MonoBehaviour
         // Start the game with Stage 1 and show the introductory text.
         if (currentStage == 1)
         {
-            textDisplayManager.AddMessageToQueue("Welcome to a world of kindness and joy, but beware of its opposite.");
-            textDisplayManager.AddMessageToQueue("Find the 2 mirror shards, one in each dimension.");
-            textDisplayManager.AddMessageToQueue("Press spacebar to pick up items and O to change perspective.");
+            textDisplayManager.AddMessageToQueue("Find 2 mirror shards, one in each dimension, to activate the mirror.");
+            textDisplayManager.AddMessageToQueue("Press Space to pick up items and O to change dimensions.");
         }
     }
 
@@ -52,7 +51,6 @@ public class GameController : MonoBehaviour
         // Handle what happens when the stage changes.
         if(stage == 2)
         {
-            textDisplayManager.AddMessageToQueue("You found half of the mirror. Transfer to the\ncorrupted world to find the other half.");
             textDisplayManager.AddMessageToQueue("You now have the ability to transfer between\ndimensions. Press E to change dimensions.");
             postProcessing.StartCorruption();
         }
