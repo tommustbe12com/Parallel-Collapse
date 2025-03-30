@@ -4,13 +4,13 @@ using UnityEngine.UI;
 
 public class AnswerSystem : MonoBehaviour
 {
-    public TMP_InputField answerInput; // Assign in Inspector
-    public TextMeshProUGUI feedbackText; // Assign in Inspector
-    public Button submitButton; // Assign in Inspector
-    public string correctAnswer = "TIME"; // Change this to the actual answer
-    public PlayerController playerControls; // ref for disabling player controls while typing
-    public DimensionChanger dimensionChanger; // ref for dimension changer script
-    public HintManager hintManager; // ref for hint manager script
+    public TMP_InputField answerInput; 
+    public TextMeshProUGUI feedbackText; 
+    public Button submitButton; 
+    public string correctAnswer = "TIME"; 
+    public PlayerController playerControls; 
+    public DimensionChanger dimensionChanger; 
+    public HintManager hintManager;
 
     public void Update()
     {
