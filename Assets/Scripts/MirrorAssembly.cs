@@ -19,12 +19,10 @@ public class MirrorAssembly : MonoBehaviour
                     CollectShard(pickup);
                     if (shardsCollected == 1)
                     {
-                        textDisplayManager.AddMessageToQueue("The first shard has been placed.");
                         GameController.Instance.ChangeStage(2);
                     }
                     if (shardsCollected == 2)
                     {
-                        textDisplayManager.AddMessageToQueue("The mirror is now complete.");
                         GameController.Instance.ChangeStage(4);
                     }
                 }
