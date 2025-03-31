@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public TextMeshPro clue; // ref to clue text.
     public AnswerSystem answerSystem; // ref to answer system script.
     public GameObject convergenceKey; // ref to convergence key gameObject
+    public GameObject clue2; //ref to clue 2, for stage 5 convergence gate
 
     void Update() {
         // if (Input.GetKeyDown(KeyCode.B)) {
@@ -69,6 +70,9 @@ public class GameController : MonoBehaviour
         if(stage == 5)
         {
             textDisplayManager.AddMessageToQueue("You received a key. Where is the convergence gate though?");
+            mirrorRune.SetActive(false);
+            clue.gameObject.SetActive(false);
+            clue2.gameObject.SetActive(true);
         }
     }
 }
