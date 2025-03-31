@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
     public int currentStage = 1; // Start at stage 1.
     public TextDisplayManager textDisplayManager; // ref to text display manager.
     public PostProcessing postProcessing; // ref to post-processing script.
-    public PlayerPickup playerPickup; // ref to player pickup script.
     public GameObject mirrorRune; // ref to mirror rune object to be shown on stage 4
     public TextMeshPro clue; // ref to clue text.
     public AnswerSystem answerSystem; // ref to answer system script.
@@ -70,7 +69,6 @@ public class GameController : MonoBehaviour
         if(stage == 5)
         {
             textDisplayManager.AddMessageToQueue("You received a key. Where is the convergence gate though?");
-            playerPickup.PickupItem(convergenceKey.gameObject); // hold pickup key when you solve database.
         }
     }
 }

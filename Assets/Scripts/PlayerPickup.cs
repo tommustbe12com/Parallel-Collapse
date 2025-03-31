@@ -4,6 +4,7 @@ public class PlayerPickup : MonoBehaviour
 {
     public Transform handPosition; // Assign in Inspector
     public GameObject heldItem = null;
+    public GameObject convergenceKey;
 
     void Update()
     {
@@ -17,6 +18,10 @@ public class PlayerPickup : MonoBehaviour
             {
                 DropItem(); // Drop item if already holding something
             }
+        }
+        if (GameController.Instance.currentStage == 5)
+        {
+            PickUpItem(convergenceKey);
         }
     }
 
@@ -33,7 +38,7 @@ public class PlayerPickup : MonoBehaviour
         }
     }
 
-    void PickUpItem(GameObject item)
+    public void PickUpItem(GameObject item)
     {
         heldItem = item;
         Rigidbody rb = item.GetComponent<Rigidbody>();
@@ -44,7 +49,7 @@ public class PlayerPickup : MonoBehaviour
         item.transform.localRotation = Quaternion.identity;
     }
 
-    void DropItem()
+    public void DropItem()
     {
         if (heldItem)
         {
