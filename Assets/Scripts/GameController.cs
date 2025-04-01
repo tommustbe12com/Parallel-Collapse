@@ -13,12 +13,16 @@ public class GameController : MonoBehaviour
     public AnswerSystem answerSystem; // ref to answer system script.
     public GameObject convergenceKey; // ref to convergence key gameObject
     public GameObject clue2; //ref to clue 2, for stage 5 convergence gate
+    public MorseCodeTransform morseCodeTransform; // ref to morse code transform script
 
     void Update() {
         // if (Input.GetKeyDown(KeyCode.B)) {
         //     answerSystem.ShowAnswerUI();
         // }
         // cheat code to debug, not needed now since i solved that.
+        if (Input.GetKeyDown(KeyCode.C)) {
+            textDisplayManager.AddMessageToQueue("Controls: WASD/Arrow Keys to move. Space to pick up/drop items. H for hints. O to change perspective. E to switch dimensions.");
+        }
     }
 
     void Awake()
@@ -43,10 +47,12 @@ public class GameController : MonoBehaviour
         if (currentStage == 1)
         {
             textDisplayManager.AddMessageToQueue("Welcome to the game!\n" +
-                "Your goal is to find the mirror shards and activate the mirror.\n" +
+                "First, you need to activate the mirror." +
+                "Move with W A S D, or arrow keys." + 
                 "You can pick up items by pressing Space and change perspective with O.");
             textDisplayManager.AddMessageToQueue("You can also press H for hints if you are stuck.");
             textDisplayManager.AddMessageToQueue("Find 2 mirror shards, one in each dimension, to activate the mirror.");
+            textDisplayManager.AddMessageToQueue("Pressing C will tell you controls again.");
         }
     }
 
@@ -73,6 +79,14 @@ public class GameController : MonoBehaviour
             mirrorRune.SetActive(false);
             clue.gameObject.SetActive(false);
             clue2.gameObject.SetActive(true);
+        }
+        if(stage == 7)
+        {
+            textDisplayManager.AddMessageToQueue("The convergence gate has a lock with a 5 letter code on it.\nScattered around the convergence gate are clues... can you piece them together?");
+        }
+        if(stage == 8)
+        {
+            morseCodeTransform.EndPart();
         }
     }
 }

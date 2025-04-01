@@ -16,7 +16,6 @@ public class CheckKey : MonoBehaviour
                 {
                     Destroy(pickup.heldItem); // remove key because it unlocked the door
                     GameController.Instance.ChangeStage(7);
-                    textDisplayManager.AddMessageToQueue("You have opened the convergence gate. Your final challenge awaits.");
                 }
             }
         }

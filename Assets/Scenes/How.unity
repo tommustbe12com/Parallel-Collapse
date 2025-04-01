@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.9089966, y: -182}
+  m_AnchoredPosition: {x: -4.9089966, y: -218.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &82801997
@@ -574,10 +574,13 @@ MonoBehaviour:
   m_text: "You are caught between two realities\u2014one a vibrant utopia of creativity,
     the other a cold, mechanical dystopia.\n\nBoth worlds exist in parallel, yet
     an unstable force is pulling them together, threatening total collapse. As time
-    passes, the Machine World corrupts the Happy World, draining its life.\n\nTo
-    stop the Parallel Collapse, you must shift between dimensions, uncover hidden
-    truths, and piece together the key to unlocking the Convergence Gate\u2014the
-    only way to restore balance before both worlds vanish into nothingness."
+    passes, the Machine World corrupts the Happy World, draining its life.\n\nThe
+    mirror can help you. The mirror is what connects the happy world to the corrupted
+    world, allowing you to see more than you originally could.\n\nTo stop the Parallel
+    Collapse, you must shift between dimensions, uncover hidden truths, and piece
+    together the key to unlocking the Convergence Gate\u2014the only way to restore
+    balance before both worlds vanish into nothingness.\n\nCan you stop the Parallel
+    Collapse?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -688,7 +691,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -5, y: -29}
+  m_AnchoredPosition: {x: -5, y: -39}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120497575

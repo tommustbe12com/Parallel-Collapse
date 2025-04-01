@@ -25,15 +25,17 @@ public class HintManager : MonoBehaviour
         switch (stage)
         {
             case 1:
-                return "Try to find mirror shards. One mirror shard is in each world hidden.";
+                return "Try to find mirror shards. One mirror shard is in each world, hidden.";
             case 2:
                 return "Change dimensions with E and look for the mirror shard there.";
             case 4:
-                return "Caesar cipher is used with a shift of +3. Look it up if you're confused.";
+                return "Caesar cipher is used with a shift of +3. Try Googling it.\nThe database is a monitor in the corner of the corrupted world.";
             case 5:
                 return "Some things can be seen in the mirror that can't be seen in person.";
             case 6:
                 return "Morse code messages in a certain order...";
+            case 7:
+                return "Morse code.";
             case 8:
                 return "The end is near...";
             default:
